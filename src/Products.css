@@ -1,0 +1,209 @@
+/* ==========================================================================
+   1. Base & Layout Styling
+   ========================================================================== */
+.main-products-wrapper {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa; /* Light background taaki cards acche se dikhein */
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 28px;
+}
+
+
+/* ==========================================================================
+   2. SECTION A: Highlighted/Main Product Styling (Pinterest User Layout)
+   ========================================================================== */
+.highlighted-product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px; /* Space before other products */
+}
+
+/* User ke click karne par aane wali BIG Size Dress (600px by 800px) */
+.product-card.highlighted-card {
+  width: 100%;
+  max-width: 800px;  /* User ki requested width */
+  height: 800px;     /* User ki requested height */
+  background: #fff;
+  border-radius: 20px; /* Thode bade smooth corners bade card ke liye */
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); /* Darker shadow to stand out */
+  display: flex;
+  flex-direction: column;
+  cursor: default; /* Ispe click karne ki zarurat nahi hai */
+}
+
+/* Big Card Image (70% height handles the proportions beautifully) */
+.product-card.highlighted-card img {
+  border-radius: 20px;
+  width: 100%;
+  height: 70%; 
+  object-fit: contain; 
+  background-color: #f0f0f0; 
+  display: block;
+}
+
+.product-card.highlighted-card .product-content {
+  padding: 30px; /* Extra padding for big card */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card.highlighted-card h3 {
+  font-size: 28px;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.product-card.highlighted-card p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+/* ==========================================================================
+   3. SECTION B: General/Other Products Grid Styling (300px by 500px)
+   ========================================================================== */
+.products-container.general-grid {
+  max-width: 1300px;
+  margin: 20px auto 60px auto;
+  padding: 0 20px;
+  display: grid;
+  /* Automatically columns manage karega screens ke hisab se */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 30px;
+  justify-items: center; /* Grid items ko center rakhega */
+}
+
+/* Normal Dress Card Size (300px by 500px) */
+.product-card.normal-card {
+  width: 300px;
+  height: 500px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Normal Card Hover Effect */
+.product-card.normal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Normal Card Image */
+.product-card.normal-card img {
+  width: 100%;
+  height: 280px; /* Fixed height as per your original code */
+  object-fit: cover;
+  display: block;
+}
+
+.product-card.normal-card .product-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card.normal-card h3 {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.product-card.normal-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 3; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+/* ==========================================================================
+   4. Buttons Styling (Aapke original colors ke sath)
+   ========================================================================== */
+.product-content button {
+  width: 130px;
+  height: 38px;
+  background-color: rgb(8, 0, 255); /* Aapka royal blue color */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 5px;
+}
+
+.product-content button:hover {
+  background-color: rgb(5, 0, 200); /* Hover par thoda dark blue */
+}
+
+/* View Details / Clear Selection custom secondary buttons styling */
+.product-content button[style*="background-color"] {
+  width: auto !important; /* Content ke hisab se stretch hoga */
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 10px;
+}
+
+
+/* ==========================================================================
+   5. Responsive Media Queries (Mobile & Tablets Friendly)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Tablet par big card ko full screen width denge taaki side se kate na */
+  .product-card.highlighted-card {
+    max-width: 90%;
+    height: 700px; /* Height thodi kam mobile responsive ke liye */
+  }
+
+  .products-container.general-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+
+  /* Normal cards ka size responsive adjust karne ke liye width hatayi */
+  .product-card.normal-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile phones par sizes */
+  .product-card.highlighted-card {
+    max-width: 95%;
+    height: 550px; 
+  }
+  
+  .product-card.highlighted-card h3 {
+    font-size: 22px;
+  }
+
+  .products-container.general-grid {
+    grid-template-columns: 1fr; /* Mobile par single column list */
+    padding: 0 15px;
+  }
+}
