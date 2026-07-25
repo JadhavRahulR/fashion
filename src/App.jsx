@@ -1,26 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-// import './App.css'
-import Navbar from './Navbar'
-import Products from './Products'
-import Footer from './Footer'
+import { Routes, Route } from "react-router-dom";
+
+import Navbar from "./Navbar";
+import LandingPage from "./LandingPage";
+import Products from "./Products";
+import Footer from "./Footer";
 
 function App() {
-
-
-  console.log(Products);
   return (
     <>
-    <Navbar/>
-      <h1 style={{'color':'blue','textAlign':"center"}}>Top Result Search Buy Users</h1>
+      <Navbar />
 
-<Products/>
+      <Routes>
 
-<Footer/>
-      
+        <Route path="/" element={  <LandingPage />   } />
+        <Route path="/collections" element={ <Products/>} />
+
+
+      </Routes>
+
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

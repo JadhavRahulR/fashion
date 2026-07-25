@@ -10,12 +10,12 @@ const Navbar = () => {
       <div className="navbar-container">
 
         <Link to="/" className="logo">
-          FASION
+          WEARISTY
         </Link>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Categories</Link>
           </li>
           <li>
             <Link to="/men">Men</Link>
