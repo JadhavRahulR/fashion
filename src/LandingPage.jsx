@@ -14,7 +14,7 @@ const LandingPage = () => {
           </span>
 
           <h1>
-            Discover Your Perfect Style with WearIsty
+            Discover Your Perfect Style with Wearisty
           </h1>
 
           <p>
