@@ -15,13 +15,13 @@ const Navbar = () => {
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/">Categories</Link>
+            <Link to="/categories">Categories</Link>
           </li>
           <li>
             <Link to="/men">Men</Link>
           </li>
           <li>
-            <Link to="/women">Women</Link>
+            <Link to="/collections">Women</Link>
           </li>
           <li>
             <Link to="/collections">Collections</Link>

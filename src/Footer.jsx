@@ -25,9 +25,8 @@ const Footer = () => {
 
           <Link to="/">Home</Link>
           <Link to="/men">Men</Link>
-          <Link to="/women">Women</Link>
+          <Link to="/collections">Women</Link>
           <Link to="/collections">Collections</Link>
-          <Link to="/contact">Contact</Link>
         </div>
 
         <div className="footer-social">

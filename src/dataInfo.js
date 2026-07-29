@@ -1332,18 +1332,160 @@ const dataInfo = [
     },
     {
     id: 184,
-    image: "/images/184.jpg",
-    title: "",
-    description: "",
-    productLink:"",
+    image: "/savana/11.webp",
+    title: "Elegant Blush Pink Satin Off-Shoulder Mermaid Maxi Dress ✨",
+    description: "Turn heads in this elegant blush pink satin off-shoulder mermaid dress, designed with a flattering fitted silhouette and luxurious silky finish. Perfect for weddings, formal parties, prom, evening events, and special occasions. Save this timeless fashion inspiration for your next elegant outfit idea.",
+    productLink:"https://www.savana.com/details/gathered-a-line-dress-2162532?vid=6&skcPGs=355568-457436",
     },
     {
-    id: 181,
-    image: "/images/181.jpg",
-    title: "",
-    description: "",
+    id: 185,
+    image: "/savana/12.webp",
+    title: "Elegant Pink Textured Sleeveless Mini Dress for Chic Party Looks 💖",
+    description: "The dress is presented as a clean, high-quality Pinterest fashion editorial with a polished model pose and soft, elegant lighting that highlights its texture and silhouette.",
     productLink:"",
     },
+     {
+    id: 186,
+    image: "/savana/13.webp",
+    title: "Contrast Checkered Off Shoulder Flared Hem Mini Dress",
+    description: "Elevate your wardrobe with this stylish black off-shoulder mini dress featuring eye-catching blue plaid long sleeves and a flattering fit-and-flare silhouette. Perfect for date nights, parties, casual chic outings, and fashion-forward street style. Save this unique outfit inspiration for your next statement look.",
+    productLink:"https://littleboxindia.com/collections/dresses/products/contrast-checkered-sleeve-off-shoulder-mini-dress",
+    },
+     {
+    id: 187,
+    image: "/savana/14.webp",
+    title: "Halter Neck Tiered Ruffle Mini Dress in Sage Green",
+    description: "Halter Neck Tiered Ruffle Mini Dress in Sage Green₹ 1,199",
+    productLink:"https://littleboxindia.com/collections/new-arrivals/products/halter-neck-tiered-ruffle-mini-dress-in-sage-green",
+    },
+     {
+    id: 188,
+    image: "/savana/15.webp",
+    title: "Halter Cowl Neck Satin Maxi Dress in Lilac",
+    description: "Halter Cowl Neck Satin Maxi Dress in Lilac",
+    productLink:"https://littleboxindia.com/collections/new-arrivals/products/halter-cowl-neck-satin-maxi-dress-in-lilac",
+    },
+     {
+    id: 189,
+    image: "/savana/16.webp",
+    title: "Sleeveless V Neck Satin Midi Dress in Classic White",
+    description: "Sleeveless V Neck Satin Midi Dress in Classic White is the perfect blend of timeless elegance and modern sophistication. Crafted from smooth polyester satin with a luxurious sheen, this sleeveless V neck satin midi dress features a flattering deep V-neckline, a sleeveless silhouette, and a fitted bodice accented with fabric-covered buttons for a refined finish. The pleated A-line midi skirt flows beautifully with every step, creating graceful movement that makes this sleeveless V neck satin midi dress an ideal choice for weddings, cocktail parties, evening celebrations, and formal occasions.",
+    productLink:"https://littleboxindia.com/collections/new-arrivals/products/sleeveless-v-neck-satin-midi-dress-in-classic-white",
+    },
+     {
+    id: 190,
+    image: "/savana/17.webp",
+    title: "Square Neck Button Front Peplum Top in Classic White",
+    description: "Square Neck Button Front Peplum Top is the perfect mix of polished charm and everyday elegance. Crafted in a breathable, structured fabric, this square neck button front peplum top features a flattering square neckline, statement gold-tone button front, delicate ruffle cap sleeves, and a fitted bodice that flows into a feminine peplum hem. The tailored silhouette enhances your waist while offering a comfortable fit, making this square neck button front peplum top an effortless choice for brunch dates, office styling, and weekend outings.",
+    productLink:"https://littleboxindia.com/collections/new-arrivals/products/square-neck-button-front-peplum-top-in-classic-white",
+    },
+     {
+    id: 191,
+    image: "/savana/18.webp",
+    title: "High Neck Full Sleeve Top and Wide Leg Pants Set in Black",
+    description: "Refine your everyday style with this High Neck Full Sleeve Top and Wide Leg Pants Set in Black , designed for a sleek and polished look. Crafted from polyester, it offers a smooth texture with a lightweight and comfortable feel. The high neck top with full sleeves adds a touch of sophistication, while the wide leg pants create a flowing, relaxed silhouette that enhances movement and comfort. The coordinated design ensures a clean, put-together appearance with minimal effort.Perfect for work, travel, or smart-casual outings, this set blends modern simplicity with timeless appeal..",
+    productLink:"https://littleboxindia.com/collections/matching-sets/products/high-neck-full-sleeve-top-and-wide-leg-pants-set-in-black",
+    },
+    {
+    id: 192,
+    image: "/savana/19.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     
+    {
+    id: 193,
+    image: "/savana/20.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     
+    {
+    id: 194,
+    image: "/savana/21.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     
+    {
+    id: 195,
+    image: "/savana/22.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     
+    {
+    id: 196,
+    image: "/savana/23.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     
+    {
+    id: 197,
+    image: "/savana/24.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     
+    {
+    id: 198,
+    image: "/savana/25.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     
+    {
+    id: 199,
+    image: "/savana/26.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     
+    {
+    id: 200,
+    image: "/savana/27.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     {
+    id: 201,
+    image: "/savana/28.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     {
+    id: 202,
+    image: "/savana/29.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     {
+    id: 203,
+    image: "/savana/30.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     {
+    id: 204,
+    image: "/savana/31.webp",
+    title: "",
+    description: ".",
+    productLink:"",
+    },
+     
      
 
 

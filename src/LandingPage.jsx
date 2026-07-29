@@ -1,7 +1,48 @@
 import { Link } from "react-router-dom";
 import "./LandingPage.css";
+import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import dataInfo from "./dataInfo";
+
 
 const LandingPage = () => {
+
+  const navigate = useNavigate();
+  const [currentImage, setCurrentImage] = useState(() =>
+  Math.floor(Math.random() * dataInfo.length)
+);
+
+  const categories = [
+  "All",
+  "Casual",
+  "Party",
+  "Summer",
+  "Beach",
+  "Vacation",
+  "Wedding",
+  "Date Night",
+  "Office",
+  "Boho",
+  "Floral",
+  "Mini Dress",
+  "Maxi Dress",
+  "Bodycon",
+  "Y2K",
+  "Jumpsuits",
+  "Co-Ord Sets",
+  "Tops",
+  "Accessories",
+];
+
+
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentImage((prev) => (prev + 1) % dataInfo.length);
+  }, 500);
+
+  return () => clearInterval(interval);
+}, []);
   return (
     <div className="landing">
 
@@ -39,10 +80,9 @@ const LandingPage = () => {
         <div className="hero-right">
 
           <img
-            src="/images/16.jpg"
-            alt="Fashion Model"
-          />
-
+  src={dataInfo[currentImage].image}
+  alt={dataInfo[currentImage].title}
+/>
         </div>
 
       </section>
@@ -74,24 +114,26 @@ const LandingPage = () => {
         id="categories"
       >
 
-        <h2>Popular Categories</h2>
+       <h2>Popular Categories</h2>
 
-        <div className="category-grid">
-
-          <div className="category">Casual Dresses</div>
-
-          <div className="category">Party Wear</div>
-
-          <div className="category">Summer Fashion</div>
-
-          <div className="category">Wedding Dresses</div>
-
-          <div className="category">Evening Gowns</div>
-
-          <div className="category">Street Style</div>
-
-        </div>
-
+<div className="category-grid">
+  {categories.map((category) => (
+    <div
+      key={category}
+      className="category"
+      onClick={() =>
+        navigate(
+          category === "All"
+            ? "/categories"
+            : `/categories?category=${encodeURIComponent(category)}`
+        )
+      }
+      style={{ cursor: "pointer" }}
+    >
+      {category}
+    </div>
+  ))}
+</div>
       </section>
 
       <section className="cta">
